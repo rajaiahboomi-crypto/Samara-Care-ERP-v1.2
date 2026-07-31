@@ -1,0 +1,13 @@
+SAMARA CARE ERP v1.0.1 — NEW REPOSITORY DEPLOYMENT
+
+Repository: Samara-Care-ERP-v1.0
+Live URL: https://rajaiahboomi-crypto.github.io/Samara-Care-ERP-v1.0/
+
+1. Extract this ZIP.
+2. Upload ALL files and folders inside the extracted folder to the ROOT of the new repository.
+3. Commit to the main branch.
+4. In GitHub: Settings → Pages → Source: GitHub Actions.
+5. Open the Actions tab and wait for Deploy GitHub Pages to show a green tick.
+6. Open: https://rajaiahboomi-crypto.github.io/Samara-Care-ERP-v1.0/?release=1.0.1
+
+Your existing Supabase project and existing patient/employee data remain unchanged. Do not rerun SQL scripts that have already succeeded.
