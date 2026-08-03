@@ -1,7 +1,8 @@
-window.SAMARA_CONFIG = {
+window.SAMARA_CONFIG = Object.freeze({
   appName: 'Samara Care',
-  basePath: '/Samara-Care-ERP-v1.0/',
+  basePath: '/Samara_AL_ERP_V7/',
   supabaseUrl: 'https://askalabwtlrnoodinayq.supabase.co',
   supabasePublishableKey: 'sb_publishable_MPf0spA1IsJWWR5-ltVAyA_Z_gctBr-',
-  version: '1.0.1'
-};
+  employeeEmailDomain: 'users.samaracare.local',
+  version: '7.2.0'
+});

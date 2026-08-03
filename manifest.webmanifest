@@ -1,24 +1,14 @@
 {
-  "name": "Samara Care Assisted Living",
+  "name": "Samara Care ERP 1.0.18",
   "short_name": "Samara Care",
-  "start_url": "./?source=pwa-v101",
+  "description": "Unified post-discharge assisted living ERP",
+  "start_url": "./",
   "scope": "./",
   "display": "standalone",
   "background_color": "#f4f7f6",
-  "theme_color": "#0b6656",
-  "description": "Samara Care ERP for assisted living operations, clinical care, documents, billing and staff management.",
+  "theme_color": "#0b5d4b",
   "icons": [
-    {
-      "src": "./icons/icon-192.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "./icons/icon-512.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any maskable"
-    }
+    {"src":"./icons/icon-192.png","sizes":"192x192","type":"image/png","purpose":"any maskable"},
+    {"src":"./icons/icon-512.png","sizes":"512x512","type":"image/png","purpose":"any maskable"}
   ]
 }
