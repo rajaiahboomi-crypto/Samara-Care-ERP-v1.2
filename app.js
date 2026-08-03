@@ -271,8 +271,10 @@ Caring with Compassion. Living with Dignity.`;
       setBusy(true);
       const {error:authError}=await client.auth.updateUser({password});
       if(authError){setMessage(authError.message);setBusy(false);return}
-      const {error:profileError}=await client.from('profiles').update({must_change_password:false,updated_at:new Date().toISOString()}).eq('id',profile.id);
-      if(profileError){setMessage(profileError.message);setBusy(false);return}
+      // Password-change-only repair: use a security-definer RPC so staff can
+      // complete first-login onboarding even when profiles RLS blocks direct updates.
+      const {error:profileError}=await client.rpc('complete_my_first_login');
+      if(profileError){setMessage('Your password was changed, but account activation could not be completed. Please contact the Administrator.');setBusy(false);return}
       setBusy(false);onComplete();
     }
     return h('div',{className:'login-shell'},h('form',{className:'card login-card first-login-card',onSubmit:submit},
